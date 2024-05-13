@@ -1,0 +1,33 @@
+.skillset-container-wrapper {
+    background: linear-gradient(128.95deg, #57E8A2 32.52%, #33B476 104.12%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 600px;
+    gap: 40px;
+
+}
+
+.skillset-container {
+    display: flex;
+    gap: 80px;
+    flex-wrap: wrap;
+    max-width: 800px;
+    align-items: center;
+    justify-content: center;
+}
+
+.skill-img {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    color: white;
+    align-items: center;
+    justify-content: center;
+}
+
+.skill-img img {
+    width: 80px;
+    height: 80px;
+}
