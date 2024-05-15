@@ -1,3 +1,16 @@
 <h2 class="font-baloo">My work</h2>
 <span>Explore a selection of my work here - Interact with projects to see my skills in action.</span>
-<app-project></app-project>
+
+<div class="project-container">
+    @for (project of projectService.projects; track $index) {
+        <app-project [project] = 'project'></app-project>
+    }
+</div>
+
+<!--
+    <div class="fruitlist_content">
+    @for(singlefruit of fruitlistdata.fruitlist; track singlefruit.name; let index = $index){
+    <app-singlefruit (fruitname)="addComment($event, index)" [fruit]="singlefruit"></app-singlefruit>
+    }
+</div> <app-project @for(project in projectService) [project] = 'project'></app-project>
+ -->
