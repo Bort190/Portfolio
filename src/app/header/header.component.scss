@@ -9,4 +9,15 @@ header{
     top: 0;
     right: 0;
     left: 0;
+    z-index: 10;
+}
+
+.link-container{
+    display: flex;
+    gap: 40px;
+    a{
+       color: #57E8A2;
+       text-decoration: none; 
+       font-size: 23px;
+    }
 }

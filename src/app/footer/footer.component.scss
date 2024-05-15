@@ -1,0 +1,20 @@
+footer{
+    height: 291px;
+    background: radial-gradient(71.18% 335.57% at 28.82% -124.4%, #57E8A2 51.56%, #33B476 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .footer-links{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        .social-media{
+            a{
+                cursor: pointer;
+            }
+        }
+    }
+}
+

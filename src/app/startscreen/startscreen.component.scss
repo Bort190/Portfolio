@@ -12,12 +12,17 @@
             bottom: 0;
             height: 80%;
         }
+        .ellipse{
+            bottom: auto;
+            height: auto;
+        }
     }
 
     .description-container {
         width: 50%;
         display: flex;
         flex-direction: column;
+        z-index: 5;
 
         .scroll-container {
             display: flex;
