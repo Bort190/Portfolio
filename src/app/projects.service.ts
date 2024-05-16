@@ -10,11 +10,13 @@ export class ProjectsService {
   projects = [
     {
       img: 'join.png',
-      name: 'Join'
+      name: 'Join',
+      description: 'Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.'
     },
     {
       img: 'pollo.png',
-      name: 'Tombstone Tales'
+      name: 'Tombstone Tales',
+      description: 'Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen.'
     }
   ]
 

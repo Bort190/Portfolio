@@ -4,16 +4,39 @@
 
 .container-left {
     width: 50%;
-    height: 400px;
+    min-height: 400px;
+
+    h3 {
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 38.4px;
+        text-align: left;
+        color: #57E8A2;
+        margin-top: 85px;
+        margin-bottom: 35px;
+    }
+
+    p {
+        width: min(75%, 800px)
+    }
 }
 
 .container-right {
     width: 50%;
-    height: 400px;
+    min-height: 400px;
+
+    input,
+    textarea {
+        padding: 15px 25px 15px 25px;
+        border-radius: 10px;
+        border: 1px solid #57E8A2;
+    }
+
 }
 
 form {
     display: flex;
     flex-direction: column;
-    width: clamp(250px, 60%, 600px);
+    width: clamp(300px, 75%, 800px);
+    gap: 10px;
 }

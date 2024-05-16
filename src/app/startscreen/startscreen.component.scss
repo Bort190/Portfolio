@@ -12,7 +12,8 @@
             bottom: 0;
             height: 80%;
         }
-        .ellipse{
+
+        .ellipse {
             bottom: auto;
             height: auto;
         }
@@ -33,6 +34,7 @@
             span {
                 margin: 130px auto auto auto;
                 color: #57E8A2;
+                animation: scrolldown 6s ease-in-out infinite alternate; 
             }
 
             .line {
@@ -41,12 +43,13 @@
                 width: 0px;
             }
         }
-
-
-
     }
 }
 
+@keyframes scrolldown{
+    from {margin: 130px auto auto auto;}
+    to {margin: 330px auto auto auto;}
+}
 
 
 h2 {

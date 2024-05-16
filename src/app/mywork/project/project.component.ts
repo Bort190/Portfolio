@@ -9,8 +9,9 @@ import { Component, Input } from '@angular/core';
 })
 export class ProjectComponent {
   @Input() project = {
-    img: './../../../assets/img/join.png',
-    name: 'Join'
+    img: 'join.png',
+    name: 'Join',
+    description: 'Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.'
   };
 
 }

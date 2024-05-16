@@ -1,0 +1,11 @@
+.project-container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+.description-container{
+    p{
+        width: clamp(200px, 75%, 800px);
+        margin-bottom: 50px;
+    }
+}
