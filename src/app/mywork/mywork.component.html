@@ -2,9 +2,9 @@
     <h2 class="font-baloo">My work</h2>
     <p>Explore a selection of my work here - Interact with projects to see my skills in action.</p>
 
-    <div class="project-container">
-        @for (project of projectService.projects; track $index) {
-        <app-project [project]='project'></app-project>
+    <div>
+        @for (project of projectService.projects; track i; let i = $index) {
+        <app-project [project]='project' [index]="i"></app-project>
         }
     </div>
     <app-contact></app-contact>

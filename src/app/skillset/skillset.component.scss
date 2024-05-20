@@ -4,8 +4,8 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    height: 600px;
-    gap: 40px;
+    padding-top: 93px;
+    padding-bottom: 88px;
 
     h2 {
         color: white;
@@ -14,26 +14,36 @@
 
 .skillset-container {
     display: flex;
-    gap: 80px;
+    gap: 100px;
     flex-wrap: wrap;
-    max-width: 800px;
     align-items: center;
     justify-content: center;
+    margin-top: 20px;
 }
 
 .skill-img {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    width: 15%;
     color: white;
     align-items: center;
     justify-content: center;
+    &:hover{
+        transform: translateY(-10px);
+        span {
+            transform: translateY(10px);
+            text-shadow:0px 0px 1px  white;
+        }
+    }
 
     span {
         font-size: 16px;
+        margin-top: 10px;
         font-weight: 400;
     }
 }
+
+
 
 .skill-img img {
     width: 75px;
