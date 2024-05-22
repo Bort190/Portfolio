@@ -1,8 +1,28 @@
-<header class="header padding-lr">
-    <img src="./../../assets/img/logo.png" alt="Logo">
+<header class="header padding-lr" >
+    <img src="./../../assets/img/logo.png" alt="Logo" [ngClass]="{'opacity-zero' : sidebarOpen}">
     <div class="link-container">
         <a href="#">About me</a>
         <a href="#">Skill set</a>
         <a href="#">My work</a>
     </div>
+    <div class="mobile-header">
+        <label for="check" >
+            <input type="checkbox" (click)="openSidebar()" id="check" class="d-none" />
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+    </div>
 </header>
+
+<div  id="sidebar" [ngClass]="{'is-hidden' : !sidebarOpen}">
+    <img src="./../../assets/img/logo_green.png" alt="Logo">
+    <a href="#">About me</a>
+    <a href="#">Skill set</a>
+    <a href="#">My Work</a>
+</div>
+
+
+<!--  
+data-aos="fade-left" 
+-->

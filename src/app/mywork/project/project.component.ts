@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component, Input } from '@angular/core';
+import AOS from 'aos';
 
 
 @Component({
@@ -10,6 +11,12 @@ import { Component, Input } from '@angular/core';
   styleUrl: './project.component.scss'
 })
 export class ProjectComponent {
+  ngOnInit(): void {
+  
+    AOS.init();
+  } 
+
+
   @Input() project = {
     img: 'join.png',
     name: 'Join',
