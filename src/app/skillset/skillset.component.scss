@@ -1,5 +1,5 @@
 .skillset-container-wrapper {
-    background: linear-gradient(128.95deg, #57E8A2 32.52%, #33B476 104.12%);
+    background: linear-gradient(128.95deg, #57e8a2 32.52%, #33b476 104.12%);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -14,25 +14,29 @@
 
 .skillset-container {
     display: flex;
-    gap: 100px;
+    gap: 70px;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     margin-top: 20px;
+    padding-inline: auto;
+    width: clamp(300px, 90vw, 1440px);
 }
 
 .skill-img {
     display: flex;
     flex-direction: column;
-    width: 15%;
+    width: 20%;
     color: white;
     align-items: center;
     justify-content: center;
-    &:hover{
+
+    &:hover {
         transform: translateY(-10px);
+
         span {
             transform: translateY(10px);
-            text-shadow:0px 0px 1px  white;
+            text-shadow: 0px 0px 1px white;
         }
     }
 
@@ -42,8 +46,6 @@
         font-weight: 400;
     }
 }
-
-
 
 .skill-img img {
     width: 75px;

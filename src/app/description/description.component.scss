@@ -3,6 +3,8 @@
     min-height: 630px;
     margin-inline: auto;
     width: clamp(500px, 80vw, 1440px);
+    padding-top: 140px;
+    padding-bottom: 50px;
 }
 
 .headline,
@@ -15,13 +17,32 @@
 
 h1 {
     font-size: 121px;
-    color: #57E8A2;
+    color: #57e8a2;
 }
 
 .description {
     flex-direction: column;
-    p{
+
+    p {
         margin-bottom: 20px;
     }
 }
 
+@media (max-width: 800px) {
+    .description-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 35px;
+        width: clamp(200px, 90vw, 1440px);
+    }
+
+    h1 {
+        font-size: 64px;
+        line-height: 76.8px;
+    }
+
+    .headline,
+    .description {
+        width: 100%;
+    }
+}
