@@ -1,6 +1,9 @@
-<div class="main-content padding-lr margin-top">
-    <h2 class="font-baloo">My work</h2>
-    <p>Explore a selection of my work here - Interact with projects to see my skills in action.</p>
+<div class="main-content padding-tb">
+    <div class="headline">
+        <h2 class="font-baloo">My work</h2>
+        <p>Explore a selection of my work here - Interact with projects to see my skills in action.</p>
+    </div>
+
 
     <div>
         @for (project of projectService.projects; track i; let i = $index) {
@@ -8,4 +11,6 @@
         }
     </div>
     <app-contact></app-contact>
+    <a class="scroll-up-button" href="#startscreen"><img src="./../../assets/img/Go up button s2.png" alt=""></a>
+
 </div>

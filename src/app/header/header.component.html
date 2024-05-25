@@ -1,9 +1,9 @@
 <header class="header padding-lr" >
     <img src="./../../assets/img/logo.png" alt="Logo" [ngClass]="{'opacity-zero' : sidebarOpen}">
     <div class="link-container">
-        <a href="#">About me</a>
-        <a href="#">Skill set</a>
-        <a href="#">My work</a>
+        <a href="#about-me">About me</a>
+        <a href="#my-skills">Skill set</a>
+        <a href="#my-work">My work</a>
     </div>
     <div class="mobile-header">
         <label for="check" >
@@ -17,12 +17,13 @@
 
 <div  id="sidebar" [ngClass]="{'is-hidden' : !sidebarOpen}">
     <img src="./../../assets/img/logo_green.png" alt="Logo">
-    <a href="#">About me</a>
-    <a href="#">Skill set</a>
-    <a href="#">My Work</a>
+    <a href="#about-me">About me</a>
+    <a href="#my-skills">Skill set</a>
+    <a href="#my-work">My Work</a>
 </div>
 
 
+
 <!--  
-data-aos="fade-left" 
+
 -->

@@ -4,15 +4,12 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding-top: 93px;
-    padding-bottom: 88px;
-
     h2 {
-        color: white;
+      color: white;
     }
-}
-
-.skillset-container {
+  }
+  
+  .skillset-container {
     display: flex;
     gap: 70px;
     flex-wrap: wrap;
@@ -21,33 +18,34 @@
     margin-top: 20px;
     padding-inline: auto;
     width: clamp(300px, 90vw, 1440px);
-}
-
-.skill-img {
+  }
+  
+  .skill-img {
     display: flex;
     flex-direction: column;
     width: 20%;
     color: white;
     align-items: center;
     justify-content: center;
-
+  
     &:hover {
-        transform: translateY(-10px);
-
-        span {
-            transform: translateY(10px);
-            text-shadow: 0px 0px 1px white;
-        }
+      transform: translateY(-10px);
+  
+      span {
+        transform: translateY(10px);
+        text-shadow: 0px 0px 1px white;
+      }
     }
-
+  
     span {
-        font-size: 16px;
-        margin-top: 10px;
-        font-weight: 400;
+      font-size: 16px;
+      margin-top: 10px;
+      font-weight: 400;
     }
-}
-
-.skill-img img {
+  }
+  
+  .skill-img img {
     width: 75px;
     height: 75px;
-}
+  }
+  
