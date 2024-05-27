@@ -1,123 +1,131 @@
-
 .contact-container {
-    width: clamp(300px, 90vw, 1440px);
+  width: clamp(300px, 90vw, 1440px);
+  margin-inline: auto;
+}
+.form-container {
+  display: flex;
+}
+
+.container-left {
+  width: 50%;
+  min-height: 400px;
+
+  h3 {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 38.4px;
+    text-align: left;
+    color: #57e8a2;
+    margin-top: 85px;
+    margin-bottom: 35px;
+  }
+
+  p {
+    width: min(75%, 800px);
+    font-size: 16px;
+    line-height: 19.2px;
+    margin-bottom: 25px;
+  }
+  a {
+    text-decoration: none;
+    color: #57e8a2;
+    font-size: 18px;
+    line-height: 21.6px;
+  }
+}
+
+.container-right {
+  width: 50%;
+  min-height: 400px;
+
+  input[type="text"],
+  textarea {
+    padding: 15px 25px 15px 25px;
+    border-radius: 10px;
+    border: 1px solid #57e8a2;
+  }
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: clamp(300px, 90%, 800px);
+  gap: 33px;
+  span {
+    color: red;
+  }
+}
+
+.terms span {
+  color: black;
+}
+
+@media (max-width: 800px) {
+  .form-container {
+    flex-direction: column;
+    width: clamp(300px, 80vw, 600px);
     margin-inline: auto;
   }
-  .form-container {
-    display: flex;
-  }
-  
-  .container-left {
-    width: 50%;
-    min-height: 400px;
-  
-    h3 {
-      font-size: 32px;
-      font-weight: 700;
-      line-height: 38.4px;
-      text-align: left;
-      color: #57e8a2;
-      margin-top: 85px;
-      margin-bottom: 35px;
-    }
-  
-    p {
-      width: min(75%, 800px);
-    }
-    a {
-      text-decoration: none;
-      color: #57e8a2;
-      font-size: 18px;
-      line-height: 21.6px;
-    }
-  }
-  
+
+  .container-left,
   .container-right {
-    width: 50%;
-    min-height: 400px;
-  
-    input[type="text"],
-    textarea {
-      padding: 15px 25px 15px 25px;
-      border-radius: 10px;
-      border: 1px solid #57e8a2;
-    }
+    width: 100%;
   }
-  
+  .container-left p {
+    width: 100%;
+  }
   form {
-    display: flex;
-    flex-direction: column;
-    width: clamp(300px, 90%, 800px);
-    gap: 10px;
+    width: 100%;
   }
-  
-  @media (max-width: 800px) {
-    .form-container {
-      flex-direction: column;
-      width: clamp(300px, 80vw, 600px);
-      margin-inline: auto;
-    }
-  
-    .container-left,
-    .container-right {
-      width: 100%;
-    }
-    .container-left p {
-      width: 100%;
-    }
-    form {
-      width: 100%;
-    }
-  }
-  
-  //style for the checkbox
-  
-  input[type="checkbox"] {
-    appearance: none;
-    -webkit-appearance: none;
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    font-size: 2rem;
-    padding: 0.1rem;
-    border: 3px solid #57e8a2;
-    border-radius: 0.5rem;
-    width: 30px;
-    height: 30px;
-    position: relative;
-  }
-  
-  input[type="checkbox"]::before {
-    content: "";
-    width: 2rem;
-    clip-path: polygon(100% 0, 100% 10%, 50% 95%, 25% 60%, 25% 50%, 50% 70%);
-    transform: scale(0);
-    background-color: #57e8a2;
-  }
-  
-  input[type="checkbox"]:checked::before {
-    transform: scale(1);
-  }
-  
-  .flex {
-    display: flex;
-    align-items: center;
-  }
-  
-  input[type="checkbox"]::after {
-    content: "";
-    background-color: #57e8a2;
-    opacity: 0;
-    width: 34px;
-    height: 34px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    border-radius: 10px;
-    transform: translate(-5px, -5px);
-  }
-  
-  input[type="checkbox"]:hover::after {
-    opacity: 0.2;
-  }
-  
+}
+
+//style for the checkbox
+
+input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  font-size: 2rem;
+  padding: 0.1rem;
+  border: 3px solid #57e8a2;
+  border-radius: 0.5rem;
+  width: 30px;
+  height: 30px;
+  position: relative;
+}
+
+input[type="checkbox"]::before {
+  content: "";
+  width: 2rem;
+  clip-path: polygon(100% 0, 100% 10%, 50% 95%, 25% 60%, 25% 50%, 50% 70%);
+  transform: scale(0);
+  background-color: #57e8a2;
+}
+
+input[type="checkbox"]:checked::before {
+  transform: scale(1);
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+input[type="checkbox"]::after {
+  content: "";
+  background-color: #57e8a2;
+  opacity: 0;
+  width: 34px;
+  height: 34px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 10px;
+  transform: translate(-5px, -5px);
+}
+
+input[type="checkbox"]:hover::after {
+  opacity: 0.2;
+}

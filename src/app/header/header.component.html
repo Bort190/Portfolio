@@ -7,7 +7,7 @@
     </div>
     <div class="mobile-header">
         <label for="check" >
-            <input type="checkbox" (click)="openSidebar()" id="check" class="d-none" />
+            <input type="checkbox" (click)="openSidebar()" [checked]="sidebarOpen" id="check" class="d-none" />
             <span></span>
             <span></span>
             <span></span>
@@ -17,9 +17,9 @@
 
 <div  id="sidebar" [ngClass]="{'is-hidden' : !sidebarOpen}">
     <img src="./../../assets/img/logo_green.png" alt="Logo">
-    <a href="#about-me">About me</a>
-    <a href="#my-skills">Skill set</a>
-    <a href="#my-work">My Work</a>
+    <a (click)="closeSidebar()" href="#about-me">About me</a>
+    <a (click)="closeSidebar()" href="#my-skills">Skill set</a>
+    <a (click)="closeSidebar()" href="#my-work">My Work</a>
 </div>
 
 

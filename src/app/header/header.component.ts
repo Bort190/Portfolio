@@ -6,13 +6,16 @@ import { Component } from '@angular/core';
   standalone: true,
   imports: [CommonModule],
   templateUrl: './header.component.html',
-  styleUrl: './header.component.scss'
+  styleUrl: './header.component.scss',
 })
 export class HeaderComponent {
+  sidebarOpen: boolean = false;
 
-  sidebarOpen:boolean = false;
+  openSidebar() {
+    this.sidebarOpen = !this.sidebarOpen;
+  }
 
-  openSidebar(){
-    this.sidebarOpen = !this.sidebarOpen;   
+  closeSidebar() {
+    this.sidebarOpen = false;
   }
 }
