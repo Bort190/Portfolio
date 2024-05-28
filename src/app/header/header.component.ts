@@ -1,15 +1,18 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, TranslateModule],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss',
 })
 export class HeaderComponent {
   sidebarOpen: boolean = false;
+
+  private translateService = inject(TranslateService)
 
   openSidebar() {
     this.sidebarOpen = !this.sidebarOpen;
@@ -17,5 +20,9 @@ export class HeaderComponent {
 
   closeSidebar() {
     this.sidebarOpen = false;
+  }
+
+  changeLanguage(lang: string) {
+    this.translateService.use(lang);
   }
 }

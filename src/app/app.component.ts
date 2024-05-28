@@ -17,18 +17,11 @@ import { TranslateModule, TranslateService } from '@ngx-translate/core';
   styleUrl: './app.component.scss'
 })
 export class AppComponent implements OnInit {
-  languages = ['de', 'en'];
   private translateService = inject(TranslateService);
-  
-  ngOnInit(): void {
-    const defaultLanguage = localStorage.getItem('language') || 'de';
-    this.translateService.setDefaultLang(defaultLanguage);
-    this.translateService.use(defaultLanguage);
-  }
 
-  changeLanguage(lang: string){
-    this.translateService.use(lang);
-    localStorage.setItem('language' ,lang)
+  ngOnInit(): void {
+    this.translateService.setDefaultLang('de');
+    this.translateService.use('de');
   }
   title = 'portfolio';
 }
