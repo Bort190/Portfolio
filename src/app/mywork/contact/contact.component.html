@@ -11,17 +11,17 @@
         <div class="container-right">
             <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
                 <input #name="ngModel" [(ngModel)]="contactData.name" name="name" type="text" placeholder="Your name" required>
-                @if (!name.valid && name.touched) {
+                @if (!name.valid && name.dirty) {
                     <span>Please enter a name</span>
                     }
                 <input #mail="ngModel" [(ngModel)]="contactData.email" name="email" type="text" placeholder="Your email" required
                     pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}">
-                    @if (!mail.valid && mail.touched) {
+                    @if (!mail.valid && mail.dirty) {
                         <span>Please enter an email adress</span>
                         }   
                 <textarea #message="ngModel" minlength="4" [(ngModel)]="contactData.message" name="message" id=""
                     placeholder="Your message" required></textarea>
-                @if (!message.valid && message.touched) {
+                @if (!message.valid && message.dirty) {
                 <span>Please enter a message</span>
                 }
                 <div class="terms flex">

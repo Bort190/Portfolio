@@ -1,5 +1,6 @@
 .description-container {
   display: flex;
+  gap: 75px;
   margin-inline: auto;
   width: clamp(500px, 80vw, 1440px);
 }
