@@ -15,6 +15,7 @@
 
 h1 {
   color: #57e8a2;
+  font-size: clamp(3.2rem, -0.7rem + 7vw, 4.2rem);
 }
 
 .description {
