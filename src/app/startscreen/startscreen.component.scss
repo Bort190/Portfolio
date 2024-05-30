@@ -1,10 +1,16 @@
-.startscreen-container {
-  display: flex;
-  background-image: url(./../../assets/img/Ellipse\ 3.png), linear-gradient(179.99deg, #ffffff 12.89%, #d7ffec 91.39%);
+.background-container {
+  background-image: url(./../../assets/img/Ellipse\ 3.png),
+    linear-gradient(179.99deg, #ffffff 12.89%, #d7ffec 91.39%);
   background-repeat: no-repeat;
   background-size: contain;
+}
+
+.startscreen-container {
+  display: flex;
   height: 100vh;
   overflow: hidden;
+  margin-inline: auto;
+  width: clamp(300px, 80vw, 1440px);
 
   .picture-container {
     width: 50%;
@@ -50,7 +56,6 @@
         justify-content: center;
         align-items: flex-end;
 
-
         .social-media {
           display: flex;
           flex-direction: column;
@@ -64,14 +69,15 @@
           }
 
           a:hover {
-            transform: translateX(-10px);
+            img {
+              transform: translateX(-7px);
+            }
           }
         }
       }
     }
   }
 }
-
 
 h2 {
   margin-top: 232px;
@@ -133,7 +139,9 @@ h1 {
 .bubble1 {
   height: 150px;
   width: 150px;
-  background: radial-gradient(74.22% 74.22% at 19.79% 22.42%, #57e8a2 51.56%, #33b476 100%);
+  background: radial-gradient(74.22% 74.22% at 19.79% 22.42%,
+      #57e8a2 51.56%,
+      #33b476 100%);
   border-radius: 50%;
   position: absolute;
   top: 90%;
@@ -145,7 +153,9 @@ h1 {
 .bubble2 {
   height: 80px;
   width: 80px;
-  background: radial-gradient(74.22% 74.22% at 19.79% 22.42%, #57e8a2 51.56%, #33b476 100%);
+  background: radial-gradient(74.22% 74.22% at 19.79% 22.42%,
+      #57e8a2 51.56%,
+      #33b476 100%);
   border-radius: 50%;
   position: absolute;
   top: 101vh;

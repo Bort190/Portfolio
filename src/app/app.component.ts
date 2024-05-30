@@ -7,12 +7,13 @@ import { SkillsetComponent } from './skillset/skillset.component';
 import { MyworkComponent } from './mywork/mywork.component';
 import { FooterComponent } from './footer/footer.component';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
+import { ImprintComponent } from './imprint/imprint.component';
 
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, StartscreenComponent, DescriptionComponent, SkillsetComponent, MyworkComponent, FooterComponent, TranslateModule],
+  imports: [CommonModule, RouterOutlet, StartscreenComponent, DescriptionComponent, SkillsetComponent, MyworkComponent, FooterComponent, TranslateModule, ImprintComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

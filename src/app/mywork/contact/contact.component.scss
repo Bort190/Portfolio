@@ -2,6 +2,7 @@
   width: clamp(300px, 90vw, 1440px);
   margin-inline: auto;
 }
+
 .form-container {
   display: flex;
 }
@@ -26,6 +27,7 @@
     line-height: 19.2px;
     margin-bottom: 25px;
   }
+
   a {
     text-decoration: none;
     color: #57e8a2;
@@ -51,6 +53,7 @@ form {
   flex-direction: column;
   width: clamp(300px, 90%, 800px);
   gap: 33px;
+
   span {
     color: red;
     font-size: 14px;
@@ -61,6 +64,20 @@ form {
 
 .terms span {
   color: black;
+}
+
+.invalidForm {
+  border: 1px solid #57e8a2 !important;
+  background-image: url(./../../../assets/img/Email\ button\ s2.png);
+  background-position: 97% 10px;
+  background-repeat: no-repeat;
+}
+
+.validForm {
+  border: 2px solid red !important;
+  background-image: url(./../../../assets/img/Github\ button\ s2.png);
+  background-position: 97% 10px;
+  background-repeat: no-repeat;
 }
 
 @media (max-width: 800px) {
@@ -74,9 +91,11 @@ form {
   .container-right {
     width: 100%;
   }
+
   .container-left p {
     width: 100%;
   }
+
   form {
     width: 100%;
   }

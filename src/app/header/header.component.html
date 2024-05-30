@@ -1,13 +1,20 @@
-<header class="header padding-lr" >
+<header class="header padding-lr">
     <img src="./../../assets/img/logo.png" alt="Logo" [ngClass]="{'opacity-zero' : sidebarOpen}">
     <div class="link-container">
         <a href="#about-me">{{ "header.aboutMe" | translate}}</a>
         <a href="#my-skills">{{ "header.skillset" | translate}}</a>
         <a href="#my-work">{{ "header.mywork" | translate}}</a>
         <a href="#contact">{{ "header.contact" | translate}}</a>
+        <div class="language-container">
+            <a> <span (click)="changeLanguage('de')">DE</span></a>
+            <div class="divider"></div>
+            <a> <span (click)="changeLanguage('en')">EN</span></a>
+        </div>
+
+
     </div>
     <div class="mobile-header">
-        <label for="check" >
+        <label for="check">
             <input type="checkbox" (click)="openSidebar()" [checked]="sidebarOpen" id="check" class="d-none" />
             <span></span>
             <span></span>
@@ -16,7 +23,7 @@
     </div>
 </header>
 
-<div  id="sidebar" [ngClass]="{'is-hidden' : !sidebarOpen}">
+<div id="sidebar" [ngClass]="{'is-hidden' : !sidebarOpen}">
     <img src="./../../assets/img/logo_green.png" alt="Logo">
     <a (click)="closeSidebar()" href="#about-me">{{ "header.aboutMe" | translate}}</a>
     <a (click)="closeSidebar()" href="#my-skills">{{ "header.skillset" | translate}}</a>

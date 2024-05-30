@@ -6,21 +6,24 @@
             <h3>Got a problem to solve?</h3>
             <p>Contact me through this form, I am interested in hearing from you, knowing your ideas and contributing to
                 your projects with my work.</p>
-            <a href="#">need a Frontend Developer? <b class="font-baloo" >Contact me!</b></a>
+            <a href="#">need a Frontend Developer? <b class="font-baloo">Contact me!</b></a>
         </div>
         <div class="container-right">
             <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
-                <input #name="ngModel" [(ngModel)]="contactData.name" name="name" type="text" placeholder="Your name" required>
+                <input #name="ngModel" [ngClass]="{'invalidForm' : !name.valid && name.dirty}"
+                    [(ngModel)]="contactData.name" name="name" type="text" placeholder="Your name" required>
                 @if (!name.valid && name.dirty) {
-                    <span>Please enter a name</span>
-                    }
-                <input #mail="ngModel" [(ngModel)]="contactData.email" name="email" type="text" placeholder="Your email" required
+                <span>Please enter a name</span>
+                }
+                <input #mail="ngModel" [ngClass]="{'invalidForm' : !mail.valid && mail.dirty}"
+                    [(ngModel)]="contactData.email" name="email" type="text" placeholder="Your email" required
                     pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}">
-                    @if (!mail.valid && mail.dirty) {
-                        <span>Please enter an email adress</span>
-                        }   
-                <textarea #message="ngModel" minlength="4" [(ngModel)]="contactData.message" name="message" id=""
-                    placeholder="Your message" required></textarea>
+                @if (!mail.valid && mail.dirty) {
+                <span>Please enter an email adress</span>
+                }
+                <textarea #message="ngModel" [ngClass]="{'invalidForm' : !message.valid && message.dirty}" minlength="4"
+                    [(ngModel)]="contactData.message" name="message" id="" placeholder="Your message"
+                    required></textarea>
                 @if (!message.valid && message.dirty) {
                 <span>Please enter a message</span>
                 }

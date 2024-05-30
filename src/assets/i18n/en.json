@@ -6,32 +6,19 @@
         "contact": "Kontakt"
     },
     "titlepage": {
-        "name": "Hallo! Ich bin Heiko",
+        "name": "Hello! I´m Heiko",
         "title": "Frontend Developer"
     },
     "description": {
-        "header": "Ich freue mich auf die Zusammenarbeit",
+        "header": "Let´s work together",
         "text1": "I am a Front-end developer based in Munich, Germany. I enjoy helping designers and companies bring their ideas into real life. I am looking forward to continuing my developer career with a job in a junior web developer position.",
         "text2": "If you think I’d be a good match for your projects, contact me!"
     },
     "mywork": {
         "headline": "Meine Projekte",
         "introduction": "Explore a selection of my work here - Interact with projects to see my skills in action.",
-        "join": {
-            "name": "Tombstone Tales",
-            "skills": "Angular",
-            "description": "Text"
-        },
-        "polloloco": {
-            "name": "Tombstone Tales",
-            "skills": "Angular",
-            "description": "Text"
-        },
-        "dabubble": {
-            "name": "Tombstone Tales",
-            "skills": "Angular",
-            "description": "Text"
-        }
+        "projectName": "{{project.name}}",
+        "projectDescription": "{{descriptionEn}}"
     },
     "contact": {
         "header": "Kontakt",
