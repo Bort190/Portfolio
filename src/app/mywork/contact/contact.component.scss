@@ -80,6 +80,23 @@ form {
   background-repeat: no-repeat;
 }
 
+.invalidFormButton,
+.invalidFormButton:hover {
+  outline: none;
+  color: black;
+  background-color: lightgrey;
+  z-index: 1;
+  border: solid 1px grey;
+  &:hover {
+    transform: none;
+  }
+}
+
+.invalidFormButton::before,
+.invalidFormButton:hover::before {
+  display: none;
+}
+
 @media (max-width: 800px) {
   .form-container {
     flex-direction: column;

@@ -8,14 +8,25 @@ import { MyworkComponent } from './mywork/mywork.component';
 import { FooterComponent } from './footer/footer.component';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import { ImprintComponent } from './imprint/imprint.component';
-
+import { HeaderComponent } from './header/header.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, StartscreenComponent, DescriptionComponent, SkillsetComponent, MyworkComponent, FooterComponent, TranslateModule, ImprintComponent],
+  imports: [
+    CommonModule,
+    HeaderComponent,
+    RouterOutlet,
+    StartscreenComponent,
+    DescriptionComponent,
+    SkillsetComponent,
+    MyworkComponent,
+    FooterComponent,
+    TranslateModule,
+    ImprintComponent,
+  ],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  styleUrl: './app.component.scss',
 })
 export class AppComponent implements OnInit {
   private translateService = inject(TranslateService);

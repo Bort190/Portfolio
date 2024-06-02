@@ -15,9 +15,14 @@ export class ContactComponent {
     email: '',
     message: '',
   };
+  termsChecked: boolean = false;
+
+  checkTerms(event: any) {
+    this.termsChecked = event.target.checked;
+  }
 
   onSubmit(ngForm: NgForm) {
-    if (ngForm.valid && ngForm.submitted) {
+    if (ngForm.valid && ngForm.submitted && this.termsChecked) {
       console.log(this.contactData);
     }
   }

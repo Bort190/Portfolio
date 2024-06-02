@@ -1,5 +1,4 @@
 <div class="contact-container">
-
     <h2 class="font-baloo margin-top">Contact</h2>
     <div class="form-container">
         <div class="container-left">
@@ -28,13 +27,11 @@
                 <span>Please enter a message</span>
                 }
                 <div class="terms flex">
-                    <input type="checkbox" name="" id="">
-                    <span>I´ve read the blablabla</span>
+                    <input type="checkbox" name="terms" (change)="checkTerms($event)">
+                        <span>I´ve read the blablabla</span>              
                 </div>
-                <button type="submit">Say hello</button>
+                <button [ngClass]="{'invalidFormButton' : !mail.valid || !message.valid || !name.valid || !termsChecked }" type="submit">Say hello</button>
             </form>
         </div>
-
     </div>
-
 </div>
