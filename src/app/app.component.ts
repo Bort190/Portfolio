@@ -9,6 +9,7 @@ import { FooterComponent } from './footer/footer.component';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import { ImprintComponent } from './imprint/imprint.component';
 import { HeaderComponent } from './header/header.component';
+import { MainContentComponent } from './main-content/main-content.component';
 
 @Component({
   selector: 'app-root',
@@ -24,6 +25,7 @@ import { HeaderComponent } from './header/header.component';
     FooterComponent,
     TranslateModule,
     ImprintComponent,
+    MainContentComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',

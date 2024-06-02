@@ -67,15 +67,15 @@ form {
 }
 
 .invalidForm {
-  border: 1px solid #57e8a2 !important;
-  background-image: url(./../../../assets/img/Email\ button\ s2.png);
+  border: 1px solid #E61C40 !important;
+  background-image: url(./../../../assets/img/required.png);
   background-position: 97% 10px;
   background-repeat: no-repeat;
 }
 
 .validForm {
   border: 2px solid red !important;
-  background-image: url(./../../../assets/img/Github\ button\ s2.png);
+  background-image: url(./../../../assets/img/success.png);
   background-position: 97% 10px;
   background-repeat: no-repeat;
 }
