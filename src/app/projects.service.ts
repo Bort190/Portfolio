@@ -11,7 +11,7 @@ export class ProjectsService {
       img: 'join.png',
       name: 'Join',
       skills: 'Javascript | CSS | HTML',
-      liveLink: '',
+      liveLink: 'http://heiko-nevoigt.developerakademie.net/Join_Gruppenarbeit/index.html',
       githubLink: '',
       description:
         'Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.',
