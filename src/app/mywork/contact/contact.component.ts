@@ -1,17 +1,17 @@
 import { CommonModule } from '@angular/common';
 import { HttpClient } from '@angular/common/http';
 import { Component, inject } from '@angular/core';
-import { FormsModule, NgForm } from '@angular/forms';
+import { FormsModule, NgForm, NgModel } from '@angular/forms';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-contact',
   standalone: true,
-  imports: [FormsModule, CommonModule],
+  imports: [FormsModule, CommonModule, TranslateModule],
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.scss',
 })
 export class ContactComponent {
-
   http = inject(HttpClient);
 
   contactData = {
@@ -20,6 +20,7 @@ export class ContactComponent {
     message: '',
   };
   termsChecked: boolean = false;
+  formInvalid: boolean = false;
 
   checkTerms(event: any) {
     this.termsChecked = event.target.checked;
@@ -39,11 +40,16 @@ export class ContactComponent {
   };
 
   onSubmit(ngForm: NgForm) {
-    if (ngForm.submitted && ngForm.form.valid && !this.mailTest && this.termsChecked) {
-      this.http.post(this.post.endPoint, this.post.body(this.contactData))
+    if (
+      ngForm.submitted &&
+      ngForm.form.valid &&
+      !this.mailTest &&
+      this.termsChecked
+    ) {
+      this.http
+        .post(this.post.endPoint, this.post.body(this.contactData))
         .subscribe({
           next: (response) => {
-
             ngForm.resetForm();
           },
           error: (error) => {
@@ -51,10 +57,14 @@ export class ContactComponent {
           },
           complete: () => console.info('send post complete'),
         });
-    } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
-
+    } else if (
+      ngForm.submitted &&
+      ngForm.form.valid &&
+      this.mailTest &&
+      this.termsChecked
+    ) {
       ngForm.resetForm();
+      this.termsChecked = false;
     }
   }
-
 }

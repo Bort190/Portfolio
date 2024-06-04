@@ -1,42 +1,44 @@
 {
     "header": {
-        "aboutMe": "Über Mich",
-        "skillset": "Skillset",
-        "mywork": "Meine Projekte",
-        "contact": "Kontakt"
+      "aboutMe": "Über Mich",
+      "skillset": "Skillset",
+      "mywork": "Meine Projekte",
+      "contact": "Kontakt"
     },
     "titlepage": {
-        "name": "Hallo! Ich bin Heiko",
-        "title": "Frontend Developer"
+      "name": "Hallo! Ich bin Heiko",
+      "title": "Frontend Developer"
     },
     "description": {
-        "header": "Let´s work together",
-        "text1": "I am a Front-end developer based in Munich, Germany. I enjoy helping designers and companies bring their ideas into real life. I am looking forward to continuing my developer career with a job in a junior web developer position.",
-        "text2": "If you think I’d be a good match for your projects, contact me!"
+      "header": "Let´s work together",
+      "text1": "Ich bin ein Frontend-Entwickler aus Hoyerswerda, Sachsen mit einer Leidenschaft für innovative und benutzerzentrierte Weblösungen. Ich freue mich darauf, meine Fähigkeiten in neuen Projekten einzubringen und großartige digitale Erlebnisse zu schaffen",
+      "text2": "Wenn Sie denken, dass ich gut zu Ihren Projekten passe, kontaktieren Sie mich!"
     },
     "mywork": {
-        "headline": "Meine Projekte",
-        "introduction": "Explore a selection of my work here - Interact with projects to see my skills in action.",
-        "projectName": "{{project.name}}",
-        "projectDescription": "{{description}}"
+      "headline": "Meine Projekte",
+      "introduction": "Verschaffen Sie sich einen kleinen Einblick in meine Arbeit und sehen Sie meine Programmierfähigkeiten in der Praxis.",
+      "projectName": "{{project.name}}",
+      "projectDescription": "{{description}}"
     },
     "contact": {
-        "header": "Kontakt",
-        "header2": "Gibt es ein Problem zu lösen?",
-        "contactText": "Contact me through this form, I am interested in hearing from you, knowing your ideas and contributing to your projects with my work.",
-        "contactLink": "Need a Frontend developer? Contact me!",
-        "form": {
-            "name": "Name",
-            "mail": "E-mail",
-            "message": "Ihre Nachricht",
-            "nameError": "Bitte geben Sie einen Namen ein",
-            "mailError": "Bitte geben Sie eine E-mail-Adresse ein",
-            "messageError": "Bitte geben Sie eine Nachricht ein",
-            "terms": "Ich habe die Datenschutzbestimmungen gelesen und akzeptiere",
-            "button": "Senden"
-        }
+      "header": "Kontakt",
+      "header2": "Gibt es ein Problem zu lösen?",
+      "contactText": "Bitte nutzen Sie dieses Formular, um mich zu kontaktieren. Ich freue mich darauf, Ihre Ideen kennenzulernen und meine Arbeit in Ihre Projekte einzubringen.",
+      "contactLinkText": "Auf der Suche nach einem Frontend-Entwickler?",
+      "contactLink": "Kontaktieren Sie mich!",
+      "form": {
+        "name": "Name",
+        "mail": "E-mail",
+        "message": "Ihre Nachricht",
+        "nameError": "Bitte geben Sie einen Namen ein",
+        "mailError": "Bitte geben Sie eine E-mail-Adresse ein",
+        "messageError": "Bitte geben Sie eine Nachricht ein",
+        "terms": "Ich habe die Datenschutzbestimmungen gelesen und akzeptiere",
+        "button": "Senden"
+      }
     },
     "footer": {
-        "imprint": "Impressum"
+      "imprint": "Impressum"
     }
-}
+  }
+  

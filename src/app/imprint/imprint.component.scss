@@ -1,17 +1,33 @@
 .background-container {
-    background-image: linear-gradient(179.99deg, #ffffff 12.89%, #d7ffec 91.39%);
-    background-repeat: no-repeat;
-    background-size: contain;
-  }
-  
-  h1 {
-    letter-spacing: -2.5px;
+  background-image: url(./../../assets/img/Ellipse\ 3.png),
+    linear-gradient(179.99deg, #ffffff 12.89%, #d7ffec 91.39%);
+  background-repeat: no-repeat;
+  background-size: 140px, contain;
+}
+
+h1 {
+  letter-spacing: -2.5px;
+  color: #57e8a2;
+}
+
+.imprint {
+  margin-inline: auto;
+  width: clamp(300px, 80vw, 1440px);
+  strong {
     color: #57e8a2;
   }
-  
+}
+
+@media (max-width: 800px) {
   .imprint {
-    //height: 100vh;
-    margin-inline: auto;
-    width: clamp(300px, 80vw, 1440px);
+    width: clamp(300px, 80vw, 600px);
+    p,
+    a {
+      font-size: 16px;
+    }
   }
-  
+
+  h1 {
+    font-size: 44px;
+  }
+}

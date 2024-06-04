@@ -18,7 +18,9 @@ export class ProjectComponent {
   @Input() project = {
     img: 'join.png',
     name: 'Join',
-    skills: 'Angular | TypeScript',
+    skills: 'Javascript | CSS | HTML',
+    liveLink: '',
+    githubLink: '',
     description:
       'Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.',
     descriptionEn: 'description in english',
