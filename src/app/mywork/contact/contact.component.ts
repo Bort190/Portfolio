@@ -2,12 +2,13 @@ import { CommonModule } from '@angular/common';
 import { HttpClient } from '@angular/common/http';
 import { Component, inject } from '@angular/core';
 import { FormsModule, NgForm, NgModel } from '@angular/forms';
+import { RouterModule } from '@angular/router';
 import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-contact',
   standalone: true,
-  imports: [FormsModule, CommonModule, TranslateModule],
+  imports: [FormsModule, CommonModule, TranslateModule, RouterModule],
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.scss',
 })
@@ -26,10 +27,10 @@ export class ContactComponent {
     this.termsChecked = event.target.checked;
   }
 
-  mailTest = true;
+  mailTest = false;
 
   post = {
-    endPoint: 'https://deineDomain.de/sendMail.php',
+    endPoint: 'https://heiko-nevoigt.de/sendMail.php',
     body: (payload: any) => JSON.stringify(payload),
     options: {
       headers: {
@@ -57,6 +58,7 @@ export class ContactComponent {
           },
           complete: () => console.info('send post complete'),
         });
+        this.termsChecked = false;
     } else if (
       ngForm.submitted &&
       ngForm.form.valid &&

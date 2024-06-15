@@ -8,6 +8,9 @@
   img {
     height: 460px;
     width: 720px;
+    &:hover{
+      transform: scale(1.1);
+    }
   }
 }
 

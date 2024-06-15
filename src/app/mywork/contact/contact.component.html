@@ -4,44 +4,52 @@
         <div class="container-left">
             <h3>{{ "contact.header2" | translate}}</h3>
             <p>{{ "contact.contactText" | translate}}</p>
-            <a href="#contactName">{{ "contact.contactLinkText" | translate}} <b class="font-baloo">{{ "contact.contactLink" | translate}}</b></a>
+            <a href="#contactName">{{ "contact.contactLinkText" | translate}} <b class="font-baloo">{{
+                    "contact.contactLink" | translate}}</b></a>
         </div>
         <div class="container-right">
             <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
-                <input #name="ngModel" [ngClass]="{'invalidForm' : !name.valid && name.dirty}"
-                    [(ngModel)]="contactData.name" name="name" type="text" placeholder="Your name" id="contactName" required>
+                <input #name="ngModel"
+                    [ngClass]="{'invalidForm' : !name.valid && name.dirty, 'validForm' : name.valid && name.dirty}"
+                    [(ngModel)]="contactData.name" name="name" type="text" placeholder="Your name" id="contactName"
+                    required>
                 @if (name.valid) {
-                    <span class="valid">Okidoki</span>
+                <span class="valid"></span>
                 }
                 @else if(!name.valid && name.dirty || !contactForm.valid && contactForm.submitted){
-                    <span class="warning">Please enter a name</span>
+                <span class="warning">Please enter a name</span>
                 }
-                <input #mail="ngModel" [ngClass]="{'invalidForm' : !mail.valid && mail.dirty}"
+                <input #mail="ngModel"
+                    [ngClass]="{'invalidForm' : !mail.valid && mail.dirty, 'validForm' : mail.valid && mail.dirty}"
                     [(ngModel)]="contactData.email" name="email" type="text" placeholder="Your email" required
                     pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}">
-                @if (  mail.valid) {    
-                <span class="valid">Okidoki</span>
+                @if ( mail.valid) {
+                <span class="valid"></span>
                 }
                 @else if(!mail.valid && mail.dirty || !contactForm.valid && contactForm.submitted){
-                     <span class="warning">Please enter an email adress</span>
+                <span class="warning">Please enter a valid email adress</span>
                 }
-                <textarea #message="ngModel" [ngClass]="{'invalidForm' : !message.valid && message.dirty}" minlength="4"
-                    [(ngModel)]="contactData.message" name="message" id="" placeholder="Your message"
+                <textarea #message="ngModel"
+                    [ngClass]="{'invalidForm' : !message.valid && message.dirty, 'validForm' : message.valid && message.dirty}"
+                    minlength="4" [(ngModel)]="contactData.message" name="message" id="" placeholder="Your message"
                     required></textarea>
                 @if ( message.valid) {
-                <span class="valid">Okidoki</span>
+                <span class="valid"></span>
                 }
                 @else if(!message.valid && message.dirty || !contactForm.valid && contactForm.submitted){
-                    <span class="warning">Please enter a message</span>
+                <span class="warning">Please enter a message</span>
                 }
                 <div class="terms flex">
                     <input type="checkbox" name="terms" (change)="checkTerms($event)" [checked]="termsChecked">
-                    <span>I´ve read the <a href="privacy">privacy policy</a> and agree to the processing of my data as outlined </span>
+                    <span>I´ve read the <a routerLink="privacy">privacy policy</a> and agree to the processing of my
+                        data as outlined </span>
                     @if (!termsChecked && contactForm.submitted) {
-                        <span class="valid">not Okidoki</span> 
-                        }   
+                    <span class="warning">please agree to the privacy policy</span>
+                    }
                 </div>
-                <button [ngClass]="{'invalidFormButton' : !mail.valid || !message.valid || !name.valid || !termsChecked }" type="submit">Say hello</button>
+                <button
+                    [ngClass]="{'invalidFormButton' : !mail.valid || !message.valid || !name.valid || !termsChecked }"
+                    type="submit">Say hello</button>
             </form>
         </div>
     </div>

@@ -1,44 +1,43 @@
 {
-    "header": {
-      "aboutMe": "Über Mich",
-      "skillset": "Skillset",
-      "mywork": "Meine Projekte",
-      "contact": "Kontakt"
-    },
-    "titlepage": {
-      "name": "Hello! I´m Heiko",
-      "title": "Frontend Developer"
-    },
-    "description": {
-      "header": "Let´s work together",
-      "text1": "I am a Front-end developer based in Munich, Germany. I enjoy helping designers and companies bring their ideas into real life. I am looking forward to continuing my developer career with a job in a junior web developer position.",
-      "text2": "If you think I’d be a good match for your projects, contact me!"
-    },
-    "mywork": {
-      "headline": "Meine Projekte",
-      "introduction": "Explore a selection of my work here - Interact with projects to see my skills in action.",
-      "projectName": "{{project.name}}",
-      "projectDescription": "{{descriptionEn}}"
-    },
-    "contact": {
-      "header": "Kontakt",
-      "header2": "Gibt es ein Problem zu lösen?",
-      "contactText": "Contact me through this form, I am interested in hearing from you, knowing your ideas and contributing to your projects with my work.",
-      "contactLinkText": "Auf der Suche nach einem Frontend-Entwickler?",
-      "contactLink": "Kontaktieren Sie mich!",
-      "form": {
-        "name": "Name",
-        "mail": "E-mail",
-        "message": "Ihre Nachricht",
-        "nameError": "Bitte geben Sie einen Namen ein",
-        "mailError": "Bitte geben Sie eine E-mail-Adresse ein",
-        "messageError": "Bitte geben Sie eine Nachricht ein",
-        "terms": "Ich habe die Datenschutzbestimmungen gelesen und akzeptiere",
-        "button": "Senden"
-      }
-    },
-    "footer": {
-      "imprint": "Impressum"
+  "header": {
+    "aboutMe": "About Me",
+    "skillset": "Skillset",
+    "mywork": "My Projects",
+    "contact": "Contact"
+  },
+  "titlepage": {
+    "name": "Hello! I´m Heiko",
+    "title": "Frontend Developer"
+  },
+  "description": {
+    "header": "Let´s work together",
+    "text1": "I am a Front-end developer based in Munich, Germany. I enjoy helping designers and companies bring their ideas into real life. I am looking forward to continuing my developer career with a job in a junior web developer position.",
+    "text2": "If you think I’d be a good match for your projects, contact me!"
+  },
+  "mywork": {
+    "headline": "My Projects",
+    "introduction": "Explore a selection of my work here - Interact with projects to see my skills in action.",
+    "projectName": "{{project.name}}",
+    "projectDescription": "{{descriptionEn}}"
+  },
+  "contact": {
+    "header": "Contact",
+    "header2": "Is there a problem to solve?",
+    "contactText": "Contact me through this form, I am interested in hearing from you, knowing your ideas and contributing to your projects with my work.",
+    "contactLinkText": "Are You looking for a frontend developer?",
+    "contactLink": "Contact me!",
+    "form": {
+      "name": "Name",
+      "mail": "E-mail",
+      "message": "Your Message",
+      "nameError": "please insert your name",
+      "mailError": "please insert your email-adress",
+      "messageError": "Please insert your message",
+      "terms": "I have read and accept the privacy policy",
+      "button": "Send"
     }
+  },
+  "footer": {
+    "imprint": "Imprint"
   }
-  
+}

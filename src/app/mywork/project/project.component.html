@@ -5,7 +5,7 @@
         <h4>{{ project.skills }}</h4>
         <p>{{ 'mywork.projectDescription' | translate: descriptionTranslate }}</p>
         <div class="button-container">
-            <button>Github</button>
+            <a href={{project.githubLink}}><button>Github</button></a>
             <a href={{project.liveLink}}><button>Live Test</button></a>
         </div>
 
