@@ -3,7 +3,7 @@
     <div class="description-container">
         <h3 class="font-baloo">{{ project.name }}</h3>
         <h4>{{ project.skills }}</h4>
-        <p>{{ 'mywork.projectDescription' | translate: descriptionTranslate }}</p>
+        <p>{{ "mywork.projectDescription" | translate: {description: project.description, descriptionEn: project.descriptionEn} }}</p>
         <div class="button-container">
             <a href={{project.githubLink}}><button>Github</button></a>
             <a href={{project.liveLink}}><button>Live Test</button></a>

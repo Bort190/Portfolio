@@ -16,10 +16,12 @@
     width: 50%;
     display: flex;
     justify-content: center;
+    align-items: flex-end;
+    overflow: hidden;
 
     .profile-pic {
-      position: relative;
-      bottom: -50px;
+
+      height: 70%;
     }
   }
 
@@ -115,13 +117,22 @@ h1 {
     width: 100% !important;
   }
 
+  .picture-container{
+    overflow: visible !important;
+  }
+
   .picture-container {
     height: 55%;
   }
 
+  .profile-pic{
+    width: 100%;
+    height: auto !important;
+  }
+
   .description-container {
     height: 45%;
-    margin-top: 250px;
+    padding-top: max(120px, 20vh);
   }
 
   h2 {
@@ -144,10 +155,11 @@ h1 {
       #33b476 100%);
   border-radius: 50%;
   position: absolute;
-  top: 90%;
+  top: 100vh;
   left: 50vw;
   z-index: 10;
-  transform: translateX(-50%);
+  transform: translate(-50%, -75px);
+
 }
 
 .bubble2 {

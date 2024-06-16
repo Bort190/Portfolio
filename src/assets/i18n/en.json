@@ -12,7 +12,8 @@
   "description": {
     "header": "Let´s work together",
     "text1": "I am a Front-end developer based in Munich, Germany. I enjoy helping designers and companies bring their ideas into real life. I am looking forward to continuing my developer career with a job in a junior web developer position.",
-    "text2": "If you think I’d be a good match for your projects, contact me!"
+    "text2": "If you think I’d be a good match for your projects, contact me!",
+    "button": "Send a message"
   },
   "mywork": {
     "headline": "My Projects",
@@ -27,13 +28,16 @@
     "contactLinkText": "Are You looking for a frontend developer?",
     "contactLink": "Contact me!",
     "form": {
-      "name": "Name",
-      "mail": "E-mail",
-      "message": "Your Message",
+      "name": "Your name",
+      "mail": "Your e-mail",
+      "message": "Your message",
       "nameError": "please insert your name",
       "mailError": "please insert your email-adress",
       "messageError": "Please insert your message",
-      "terms": "I have read and accept the privacy policy",
+      "privacyError": "please agree to the privacy policy",
+      "privacyBefore": "I´ve read the",
+      "privacy": "privacy policy",
+      "privacyAfter": "and agree to the processing of my data as outlined.",
       "button": "Send"
     }
   },

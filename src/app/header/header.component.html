@@ -29,4 +29,9 @@
     <a (click)="closeSidebar()" href="#my-skills">{{ "header.skillset" | translate}}</a>
     <a (click)="closeSidebar()" href="#my-work">{{ "header.mywork" | translate}}</a>
     <a (click)="closeSidebar()" href="#contact">{{ "header.contact" | translate}}</a>
+    <div class="language-container">
+        <a> <span (click)="changeLanguage('de')">DE</span></a>
+        <div class="divider"></div>
+        <a> <span (click)="changeLanguage('en')">EN</span></a>
+    </div>
 </div>

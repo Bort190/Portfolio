@@ -12,7 +12,9 @@
     "description": {
       "header": "Let´s work together",
       "text1": "Ich bin ein Frontend-Entwickler aus Hoyerswerda, Sachsen mit einer Leidenschaft für innovative und benutzerzentrierte Weblösungen. Ich freue mich darauf, meine Fähigkeiten in neuen Projekten einzubringen und großartige digitale Erlebnisse zu schaffen",
-      "text2": "Wenn Sie denken, dass ich gut zu Ihren Projekten passe, kontaktieren Sie mich!"
+      "text2": "Wenn Sie denken, dass ich gut zu Ihren Projekten passe, kontaktieren Sie mich!",
+      "button": "Schreiben Sie mir"
+
     },
     "mywork": {
       "headline": "Meine Projekte",
@@ -29,11 +31,14 @@
       "form": {
         "name": "Name",
         "mail": "E-mail",
-        "message": "Ihre Nachricht",
+        "message": "Nachricht",
         "nameError": "Bitte geben Sie einen Namen ein",
         "mailError": "Bitte geben Sie eine E-mail-Adresse ein",
         "messageError": "Bitte geben Sie eine Nachricht ein",
-        "terms": "Ich habe die Datenschutzbestimmungen gelesen und akzeptiere",
+        "privacyError": "Bitte stimmen Sie den Datenschutzbestimmungen zu",
+        "privacyBefore": "Ich habe die",
+        "privacy": "Datenschutzbestimmungen",
+        "privacyAfter": "gelesen und akzeptiere diese.",
         "button": "Senden"
       }
     },
