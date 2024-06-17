@@ -22,6 +22,7 @@ export class ContactComponent {
   };
   termsChecked: boolean = false;
   formInvalid: boolean = false;
+  mailSendWindowOpen: boolean = false;
 
   checkTerms(event: any) {
     this.termsChecked = event.target.checked;
@@ -39,6 +40,13 @@ export class ContactComponent {
       },
     },
   };
+
+  mailSend() {
+    this.mailSendWindowOpen = true;
+    setTimeout(() => {
+      this.mailSendWindowOpen = false;
+    }, 2000);
+  }
 
   onSubmit(ngForm: NgForm) {
     if (
@@ -58,7 +66,8 @@ export class ContactComponent {
           },
           complete: () => console.info('send post complete'),
         });
-        this.termsChecked = false;
+      this.termsChecked = false;
+      this.mailSend();
     } else if (
       ngForm.submitted &&
       ngForm.form.valid &&
@@ -67,6 +76,7 @@ export class ContactComponent {
     ) {
       ngForm.resetForm();
       this.termsChecked = false;
+      this.mailSend();
     }
   }
 }
