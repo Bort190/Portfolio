@@ -21,7 +21,7 @@
 
     .profile-pic {
 
-      height: 70%;
+      height: 80%;
     }
   }
 
@@ -92,6 +92,13 @@ h1 {
   letter-spacing: -2.5px;
   color: #57e8a2;
   transition: color 0.5s ease-in;
+}
+
+@media (max-width: 1400px) {
+
+  .profile-pic{
+    height: 60% !important;
+  }
 }
 
 @media (max-width: 1200px) {
