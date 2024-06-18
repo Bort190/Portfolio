@@ -157,13 +157,23 @@ input[type="checkbox"]:checked~span:nth-of-type(3) {
   overflow: hidden;
 }
 
+@media (max-width: 1550px) {
+  header {
+    width: clamp(300px, 95vw, 1440px);
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  
+}
+
+
 @media (max-width: 1250px) {
   .link-container {
     gap: 15px;
   }
 }
 
-@media (max-width: 1080px) {
+@media (max-width: 1200px) {
   .mobile-header {
     display: block;
   }

@@ -31,8 +31,8 @@ export class ProjectsService {
       img: 'crm.png',
       name: 'Simple crm',
       skills: 'Angular | TypeScript',
-      liveLink: '',
-      githubLink: '',
+      liveLink: 'http://heiko-nevoigt.developerakademie.net/Join_Gruppenarbeit/index.html',
+      githubLink: 'https://github.com/maksmuehlbauer/Join_Gruppenarbeit',
       description:
         'Ein sehr einfaches Customer-Relationship-Management-System, das mit CRUD-Funktionalität arbeitet.',
       descriptionEn: 'A very Simple Customer Relationship Management system working with CRUD functionality.',
