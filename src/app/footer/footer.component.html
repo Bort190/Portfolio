@@ -1,14 +1,21 @@
 <footer class="padding-lr">
-    <div class="footer-links">
-        <img src="./../../assets/img/logo.png" alt="">
-        <span>Heiko Nevoigt 2024</span>
-        <div class="social-media">
-            <a><img src="./../../assets/img/Github button.png" alt=""></a>
-            <a><img src="./../../assets/img/Email button.png" alt=""></a>
-            <a><img src="./../../assets/img/Linkedin button.png" alt=""></a>
+    <div class="wrapper">
+        <div class="footer-links">
+            <img src="./../../assets/img/logo.png" alt="">
+            <span> Heiko Nevoigt 2024
+                <a routerLink="imprint">
+                    {{ "footer.imprint" | translate}}
+                </a>
+            </span>
+            <div class="social-media">
+                <a href="https://github.com/Bort190" target="_blank"><img src="./../../assets/img/Github button.png"
+                        alt=""></a>
+                <a href="#contact"><img src="./../../assets/img/Email button.png" alt=""></a>
+                <a href="https://de.linkedin.com/" target="_blank"><img src="./../../assets/img/Linkedin button.png"
+                        alt=""></a>
+            </div>
         </div>
+
     </div>
-    <a routerLink="imprint">
-        {{ "footer.imprint" | translate}}
-    </a>
+
 </footer>
