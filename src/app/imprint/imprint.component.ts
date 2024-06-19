@@ -10,13 +10,13 @@ import { TranslateModule } from '@ngx-translate/core';
   styleUrl: './imprint.component.scss',
 })
 export class ImprintComponent {
-  constructor(public router: Router) {
-    this.router.events.subscribe((event) => {
-      if (event instanceof NavigationEnd) {
-        setTimeout(function () {
-          window.scrollTo(0, 0);
-        }, 1);
-      }
-    });
-  }
+  //constructor(public router: Router) {
+  //this.router.events.subscribe((event) => {
+  //     if (event instanceof NavigationEnd) {
+  //     setTimeout(function () {
+  //       window.scrollTo(0, 0);
+  //      }, 1);
+  //     }
+  //   });
+  //  }
 }

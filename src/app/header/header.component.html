@@ -1,10 +1,10 @@
-<header class="header padding-lr">
-    <img src="./../../assets/img/logo.png" alt="Logo" [ngClass]="{'opacity-zero' : sidebarOpen}">
+<header class="header">
+    <img class="logo" src="./../../assets/img/logo-no-background.png" alt="Logo" [ngClass]="{'opacity-zero' : sidebarOpen}">
     <div class="link-container">
-        <a routerLink='about-me'>{{ "header.aboutMe" | translate}}</a>
-        <a routerLink='my-skills'>{{ "header.skillset" | translate}}</a>
-        <a routerLink='my-work'>{{ "header.mywork" | translate}}</a>
-        <a routerLink='contact'>{{ "header.contact" | translate}}</a>
+        <a routerLink="about-me" (click)="scrollToAnchroingPosition('about-me')">{{ "header.aboutMe" | translate}}</a>
+        <a routerLink="my-skills" (click)="scrollToAnchroingPosition('my-skills')">{{ "header.skillset" | translate}}</a>
+        <a routerLink="my-work" (click)="scrollToAnchroingPosition('my-work')">{{ "header.mywork" | translate}}</a>
+        <a routerLink="contact" (click)="scrollToAnchroingPosition('contact')">{{ "header.contact" | translate}}</a>
         <div class="language-container">
             <a> <span (click)="changeLanguage('de')">DE</span></a>
             <div class="divider"></div>
@@ -24,11 +24,11 @@
 </header>
 
 <div id="sidebar" [ngClass]="{'is-hidden' : !sidebarOpen}">
-    <img src="./../../assets/img/logo_green.png" alt="Logo">
-    <a (click)="closeSidebar()" href="#about-me">{{ "header.aboutMe" | translate}}</a>
-    <a (click)="closeSidebar()" href="#my-skills">{{ "header.skillset" | translate}}</a>
-    <a (click)="closeSidebar()" href="#my-work">{{ "header.mywork" | translate}}</a>
-    <a (click)="closeSidebar()" href="#contact">{{ "header.contact" | translate}}</a>
+    <img class="logo" src="./../../assets/img/logo-no-background-green.png" alt="Logo">
+    <a (click)="closeSidebar()" routerLink="about-me" (click)="scrollToAnchroingPosition('about-me')">{{ "header.aboutMe" | translate}}</a>
+    <a (click)="closeSidebar()" routerLink="my-skills" (click)="scrollToAnchroingPosition('my-skills')">{{ "header.skillset" | translate}}</a>
+    <a (click)="closeSidebar()" routerLink="my-work" (click)="scrollToAnchroingPosition('my-work')">{{ "header.mywork" | translate}}</a>
+    <a (click)="closeSidebar()" routerLink="contact" (click)="scrollToAnchroingPosition('contact')">{{ "header.contact" | translate}}</a>
     <div class="language-container">
         <a> <span (click)="changeLanguage('de')">DE</span></a>
         <div class="divider"></div>

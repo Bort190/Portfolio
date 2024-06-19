@@ -43,7 +43,7 @@
                 <div class="terms flex">
                     <input type="checkbox" name="terms" (change)="checkTerms($event)" [checked]="termsChecked">
                     <span>  {{ "contact.form.privacyBefore" | translate}} 
-                            <a routerLink="privacy">{{"contact.form.privacy" | translate}}</a>
+                            <a routerLink="privacy" (click)="scrollToAnchroingPosition('privacy')">{{"contact.form.privacy" | translate}}</a>
                             {{ "contact.form.privacyAfter" | translate}}
                     </span>
                 </div>

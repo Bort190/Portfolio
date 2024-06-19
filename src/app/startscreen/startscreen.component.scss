@@ -3,7 +3,6 @@
     linear-gradient(179.99deg, #ffffff 12.89%, #d7ffec 91.39%);
   background-repeat: no-repeat;
   background-size: 45%, contain;
-
 }
 
 .startscreen-container {
@@ -100,7 +99,6 @@ h1 {
   }
 }
 
-
 @media (max-width: 1100px) {
   .scroll-container {
     display: none !important;
@@ -108,7 +106,6 @@ h1 {
 
   .background-container {
     background-size: 80%, contain;
-  
   }
 
   h1,
@@ -127,7 +124,7 @@ h1 {
   }
 
   .profile-pic {
-    width: clamp(400px, 100%, 500px) !important;
+    width: clamp(300px, 80%, 369px) !important;
   }
 
   .picture-container {

@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+import { CommonModule, ViewportScroller } from '@angular/common';
 import { HttpClient } from '@angular/common/http';
 import { Component, inject } from '@angular/core';
 import { FormsModule, NgForm, NgModel } from '@angular/forms';
@@ -13,6 +13,7 @@ import { TranslateModule } from '@ngx-translate/core';
   styleUrl: './contact.component.scss',
 })
 export class ContactComponent {
+  constructor(public viewportScroller: ViewportScroller) {}
   http = inject(HttpClient);
 
   contactData = {
@@ -78,5 +79,11 @@ export class ContactComponent {
       this.termsChecked = false;
       this.mailSend();
     }
+  }
+
+  scrollToAnchroingPosition(elementId: string): void {
+    setTimeout(() => {
+      this.viewportScroller.scrollToAnchor(elementId);
+    }, 1);
   }
 }
